@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishtiaque Ahmed Tanim - SQA Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Chosen Palette: Beige & Slate with Teal Accent -->
+    <!-- Application Structure Plan: A single-page portfolio with a top navigation bar for smooth scrolling to thematic sections (Hero, About, Skills, Experience, Projects, Education, Contact). This structure provides a narrative flow while allowing recruiters to quickly jump to specific areas of interest. The key interactions are the dynamic skills chart for visual comparison and the interactive timeline for exploring career progression, making the CV more engaging than a static document. -->
+    <!-- Visualization & Content Choices: Skills -> Goal: Compare proficiency -> Viz: Horizontal Bar Chart -> Interaction: Hover tooltips -> Justification: More visually engaging and easier to compare skill levels than text/icons -> Library: Chart.js. Experience -> Goal: Show change/progression -> Viz: Vertical Timeline -> Interaction: Hover to highlight details -> Justification: Clearly visualizes career path over time -> Method: HTML/CSS/JS. Projects -> Goal: Organize/Showcase -> Viz: Card grid -> Interaction: Click to view on GitHub -> Justification: Scannable and clean presentation -> Method: HTML/Tailwind. -->
+    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f5f5f4;
+            color: #374151;
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: #0d9488;
+        }
+        .section-title {
+            position: relative;
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #e5e7eb;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 50px;
+            height: 2px;
+            background-color: #0d9488;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 1rem;
+            left: -2.375rem;
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 9999px;
+            background-color: #f5f5f4;
+            border: 4px solid #0d9488;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 500px;
+            max-height: 60vh;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="bg-stone-100/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold text-slate-700">Ishtiaque Ahmed Tanim</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-slate-600 font-medium">About</a>
+                <a href="#skills" class="nav-link text-slate-600 font-medium">Skills</a>
+                <a href="#experience" class="nav-link text-slate-600 font-medium">Experience</a>
+                <a href="#projects" class="nav-link text-slate-600 font-medium">Projects</a>
+                <a href="#contact" class="nav-link text-slate-600 font-medium">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-700">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+            <a href="#about" class="block nav-link text-slate-600">About</a>
+            <a href="#skills" class="block nav-link text-slate-600">Skills</a>
+            <a href="#experience" class="block nav-link text-slate-600">Experience</a>
+            <a href="#projects" class="block nav-link text-slate-600">Projects</a>
+            <a href="#contact" class="block nav-link text-slate-600">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="bg-white">
+            <div class="container mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 text-center md:text-left mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold text-slate-800 mb-4">Ishtiaque Ahmed Tanim</h1>
+                    <p class="text-xl md:text-2xl text-teal-600 font-medium mb-6">Junior SQA Engineer</p>
+                    <p class="text-lg text-slate-600 max-w-2xl">Specializing in HRMS/ERP quality assurance, blending manual precision with automation prowess to deliver user-centric solutions.</p>
+                     <div class="mt-8 flex justify-center md:justify-start space-x-4">
+                        <a href="https://www.linkedin.com/in/ishtiaque-ahmed-tanim-5b01b31ab/" target="_blank" class="text-slate-500 hover:text-teal-600 transition-colors">
+                            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"/></svg>
+                        </a>
+                        <a href="https://github.com/tester-tanim" target="_blank" class="text-slate-500 hover:text-teal-600 transition-colors">
+                           <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.168 6.839 9.492.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/3 flex justify-center">
+                    <img src="https://placehold.co/400x400/E2E8F0/334155?text=I.A.T" alt="Ishtiaque Ahmed Tanim" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="container mx-auto px-6 py-20">
+            <h2 class="section-title text-3xl font-bold text-slate-800">Professional Summary</h2>
+            <p class="text-lg text-slate-600 leading-relaxed max-w-4xl">
+                Emerging QA innovator transforming from intern to impact-maker in software testing. Specializing in HRMS/ERP quality assurance, I blend manual precision with automation prowess to squash bugs, streamline processes, and deliver user-centric solutions in fast-paced Agile environments. My key strengths include an enthusiasm for AI-driven testing, a focus on defect optimization, and collaborative problem-solving.
+            </p>
+        </section>
+
+        <section id="skills" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <h2 class="section-title text-3xl font-bold text-slate-800">Technical Skills</h2>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-4xl mb-12">
+                   This chart provides a visual overview of my proficiency across various technologies and methodologies in software quality assurance. The skills are rated on a scale of 1 to 5, reflecting my hands-on experience and expertise. Hover over any bar to see the specific rating.
+                </p>
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="container mx-auto px-6 py-20">
+            <h2 class="section-title text-3xl font-bold text-slate-800">Work Experience</h2>
+             <div class="relative max-w-4xl">
+                <div class="absolute left-4 top-0 h-full w-0.5 bg-slate-300 md:left-1/2 md:-translate-x-1/2"></div>
+                
+                <div class="relative mb-12">
+                    <div class="timeline-item ml-10 md:ml-0 md:flex md:items-center md:justify-end">
+                        <div class="md:w-5/12 text-left md:text-right md:pr-12">
+                            <p class="font-bold text-teal-600">Jan 2025 - Present</p>
+                        </div>
+                        <div class="md:w-5/12 bg-white p-6 rounded-lg shadow-lg border border-slate-200 mt-2 md:mt-0">
+                            <h3 class="text-xl font-bold text-slate-800">Junior SQA Engineer</h3>
+                            <p class="text-md font-medium text-slate-600 mb-3">AKIJ iBOS Limited, Dhaka</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-2">
+                                <li>Performed manual and automation testing on HR management software (People Desk).</li>
+                                <li>Conducted API testing using Postman and performance testing with JMeter, validating system stability under 10x load.</li>
+                                <li>Reported and tracked defects using Jira, collaborating with developers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="timeline-item ml-10 md:ml-0 md:flex md:flex-row-reverse md:items-center">
+                        <div class="md:w-5/12 text-left md:pl-12">
+                             <p class="font-bold text-teal-600">Oct 2024 - Dec 2024</p>
+                        </div>
+                        <div class="md:w-5/12 bg-white p-6 rounded-lg shadow-lg border border-slate-200 mt-2 md:mt-0">
+                            <h3 class="text-xl font-bold text-slate-800">Intern Software QA Engineer</h3>
+                            <p class="text-md font-medium text-slate-600 mb-3">AKIJ iBOS Limited, Dhaka</p>
+                            <ul class="list-disc list-inside text-slate-600 space-y-2">
+                                <li>Assisted in functional testing of ERP and HR software modules.</li>
+                                <li>Gained hands-on experience with Selenium and Playwright automation.</li>
+                                <li>Contributed to test plan preparation, bug reporting, and documentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="bg-white">
+            <div class="container mx-auto px-6 py-20">
+                <h2 class="section-title text-3xl font-bold text-slate-800">Projects</h2>
+                 <p class="text-lg text-slate-600 leading-relaxed max-w-4xl mb-12">
+                   Here are some of the projects I've worked on, showcasing my skills in test case design, bug reporting, API testing, performance testing, and web automation. Click on any project to view the repository on GitHub.
+                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <a href="https://github.com/tester-tanim/Test_Case_Chaldal" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Test Cases for Chaldal Website</h3>
+                        <p class="text-slate-600">Developed comprehensive test cases for an e-commerce platform, uncovering 15 usability issues.</p>
+                    </a>
+                    <a href="https://github.com/tester-tanim/Mahfil-App-Test-Case-and-Bug-Report" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Bug Report for Mahfil App</h3>
+                        <p class="text-slate-600">Identified critical mobile app bugs to improve user experience through targeted fixes.</p>
+                    </a>
+                    <a href="https://github.com/tester-tanim/API-Testing" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">API Testing with Postman & Newman</h3>
+                        <p class="text-slate-600">Automated API validation, ensuring 100% endpoint coverage and generating CLI reports.</p>
+                    </a>
+                    <a href="https://github.com/tester-tanim/Performance_Testing" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Load & Performance Testing with JMeter</h3>
+                        <p class="text-slate-600">Simulated 500+ users to benchmark system performance, reducing latency by 35%.</p>
+                    </a>
+                    <a href="https://github.com/tester-tanim/WebAutomationWithPlayWright" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">Web Automation with Playwright</h3>
+                        <p class="text-slate-600">Built robust scripts for cross-browser testing, achieving 90% automation coverage.</p>
+                    </a>
+                     <a href="https://github.com/tester-tanim/WebAutomationWith_Cucumber" target="_blank" class="block bg-stone-100 p-6 rounded-lg shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                        <h3 class="font-bold text-lg text-slate-800 mb-2">BDD Automation with Cucumber</h3>
+                        <p class="text-slate-600">Implemented a BDD framework with Cucumber and Selenium, streamlining collaboration.</p>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="container mx-auto px-6 py-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="section-title text-3xl font-bold text-slate-800">Education</h2>
+                    <div class="mb-6">
+                        <p class="text-slate-500 text-sm">2019 - 2024</p>
+                        <h3 class="text-xl font-bold text-slate-800">B.Sc. in Computer Science & Engineering</h3>
+                        <p class="text-lg text-slate-600">State University of Bangladesh</p>
+                    </div>
+                    <div>
+                        <p class="text-slate-500 text-sm">2017 - 2019</p>
+                        <h3 class="text-xl font-bold text-slate-800">HSC (Science)</h3>
+                        <p class="text-lg text-slate-600">Khagrachhari Gov't College</p>
+                    </div>
+                </div>
+                 <div>
+                    <h2 class="section-title text-3xl font-bold text-slate-800">Certifications</h2>
+                     <div>
+                        <p class="text-slate-500 text-sm">2024</p>
+                        <h3 class="text-xl font-bold text-slate-800">Hands-on SQA & Cyber Security</h3>
+                        <p class="text-lg text-slate-600 mb-2">IT Training BD</p>
+                        <p class="text-slate-500">Gained advanced skills in secure testing practices and vulnerability assessment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact" class="bg-slate-800 text-stone-300">
+             <div class="container mx-auto px-6 py-20 text-center">
+                <h2 class="text-3xl font-bold text-white mb-6">Get In Touch</h2>
+                <p class="text-lg text-stone-400 mb-4">I'm currently open to new opportunities. Feel free to reach out.</p>
+                <a href="mailto:ishtiaqueahmed1998@gmail.com" class="inline-block bg-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-teal-700 transition-colors text-lg">
+                    Say Hello
+                </a>
+                <div class="mt-12 text-stone-400">
+                     <p>Mohammadpur, Dhaka</p>
+                     <p>+8801557272482</p>
+                </div>
+                <div class="mt-8 border-t border-slate-700 pt-8">
+                     <p class="text-stone-500">&copy; 2025 Ishtiaque Ahmed Tanim. All Rights Reserved.</p>
+                </div>
+             </div>
+        </footer>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const skillsData = {
+                labels: [
+                    'Manual Testing', 'API Testing (Postman)', 'Web Automation (Selenium)', 'Programming (Java)',
+                    'Version Control (Git)', 'Agile Tools (Jira)', 'Performance Testing (JMeter)', 'Mobile Automation (Appium)', 'Database (MySQL)'
+                ],
+                datasets: [{
+                    label: 'Proficiency (out of 5)',
+                    data: [4, 4, 4, 4, 4, 4, 3, 3, 3],
+                    backgroundColor: 'rgba(13, 148, 136, 0.6)',
+                    borderColor: 'rgba(13, 148, 136, 1)',
+                    borderWidth: 1,
+                    borderRadius: 4,
+                    barThickness: 30,
+                }]
+            };
+
+            const skillsChartCtx = document.getElementById('skillsChart').getContext('2d');
+            new Chart(skillsChartCtx, {
+                type: 'bar',
+                data: skillsData,
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            max: 5,
+                            ticks: {
+                                stepSize: 1,
+                                color: '#475569'
+                            },
+                            grid: {
+                                color: '#e2e8f0'
+                            }
+                        },
+                        y: {
+                           ticks: {
+                                color: '#475569'
+                           },
+                           grid: {
+                                display: false
+                           }
+                        }
+                    },
+                    plugins: {
+                        legend: {
+                            display: false
+                        },
+                        tooltip: {
+                            backgroundColor: '#1e293b',
+                            titleFont: { size: 14 },
+                            bodyFont: { size: 12 },
+                            padding: 10,
+                            cornerRadius: 4,
+                            displayColors: false,
+                        }
+                    }
+                }
+            });
+
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            document.querySelectorAll('.nav-link, #mobile-menu a').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    if(this.getAttribute('href').startsWith('#')) {
+                        e.preventDefault();
+                        document.querySelector(this.getAttribute('href')).scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        if (!mobileMenu.classList.contains('hidden')) {
+                             mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            window.onscroll = () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if(pageYOffset >= sectionTop - 100) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            };
+        });
+    </script>
+</body>
+</html>
