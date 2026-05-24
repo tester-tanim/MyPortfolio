@@ -421,6 +421,14 @@ a {
     transition: transform var(--transition-smooth);
 }
 
+#icon-moon {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
 /* Menu Toggle for Mobile */
 .mobile-menu-btn {
     display: none;
@@ -1069,6 +1077,19 @@ a {
     width: 18px;
     height: 18px;
     fill: currentColor;
+}
+
+#cert-link-it-training-bd {
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+#cert-link-it-training-bd:hover {
+    color: var(--color-primary) !important;
+    border-color: var(--card-hover-border) !important;
+    background: rgba(99, 102, 241, 0.16) !important;
+    box-shadow: 0 0 0 1px rgba(99, 102, 241, 0.12), 0 10px 24px rgba(99, 102, 241, 0.16);
+    transform: translateY(-2px);
 }
 
 .project-info {
