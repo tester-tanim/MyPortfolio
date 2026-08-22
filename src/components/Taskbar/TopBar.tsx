@@ -64,7 +64,7 @@ export default function TopBar({ onToggleLauncher, launcherOpen, onLogout }: Pro
             <img
               src={`${import.meta.env.BASE_URL}${personal.avatar}`}
               alt=""
-              className="w-5 h-5 rounded-full object-cover border border-white/20"
+              className="w-5 h-5 rounded-full object-cover object-top border border-white/20"
             />
             <span className="hidden sm:inline">{personal.username}</span>
           </button>

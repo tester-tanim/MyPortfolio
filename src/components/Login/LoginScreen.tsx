@@ -31,11 +31,13 @@ export default function LoginScreen({ onLogin }: Props) {
         transition={{ duration: shake ? 0.4 : 0.4 }}
         className="glass-panel rounded-2xl shadow-panel p-8 w-full max-w-sm flex flex-col items-center"
       >
-        <img
-          src={`${import.meta.env.BASE_URL}${personal.avatar}`}
-          alt={`${personal.name} avatar`}
-          className="w-24 h-24 rounded-full object-cover border-2 border-term-green/50 shadow-lg mb-4"
-        />
+        <div className="w-32 h-32 rounded-full border-2 border-term-green/50 shadow-lg mb-4 overflow-hidden">
+          <img
+            src={`${import.meta.env.BASE_URL}${personal.avatar}`}
+            alt={`${personal.name} avatar`}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
         <h1 className="text-xl font-semibold text-white">{personal.name}</h1>
         <p className="text-sm text-term-dim font-mono-term mb-6">{personal.shortRole}</p>
 

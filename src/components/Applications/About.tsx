@@ -4,11 +4,13 @@ export default function About() {
   return (
     <div className="h-full overflow-y-auto scrollable p-6 text-gray-200">
       <div className="flex items-center gap-4 mb-5">
-        <img
-          src={`${import.meta.env.BASE_URL}${personal.avatar}`}
-          alt={`${personal.name} avatar`}
-          className="w-16 h-16 rounded-full object-cover border border-white/10"
-        />
+        <div className="w-16 h-16 rounded-full border border-white/10 overflow-hidden shrink-0">
+          <img
+            src={`${import.meta.env.BASE_URL}${personal.avatar}`}
+            alt={`${personal.name} avatar`}
+            className="w-full h-full object-cover object-top"
+          />
+        </div>
         <div>
           <h2 className="text-lg font-semibold text-white">{personal.name}</h2>
           <p className="text-term-green text-sm font-mono-term">{personal.role}</p>
