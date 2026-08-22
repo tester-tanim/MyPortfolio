@@ -5,808 +5,432 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ishtiaque Ahmed Tanim - SQA & Test Automation Engineer Portfolio. Junior SQA Engineer at AKIJ iBOS Limited. Specialist in Playwright, Selenium, API and Performance Testing.">
     <meta name="keywords" content="Ishtiaque Ahmed Tanim, SQA Engineer, Test Automation, Playwright, Selenium, AKIJ iBOS, State University of Bangladesh, Software Quality Assurance, Postman, Newman, JMeter">
-    
-    <!-- Open Graph Metadata (SEO) -->
+
     <meta property="og:title" content="Ishtiaque Ahmed Tanim | SQA & Test Automation Engineer">
     <meta property="og:description" content="Explore the SQA engineering portfolio of Ishtiaque Ahmed Tanim. Hands-on experience in testing multitenant cloud-based SaaS, automation (Playwright/Selenium), API, and performance testing.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://tanim-qa.local">
-    
+
     <title>Ishtiaque Ahmed Tanim | SQA & Test Automation Engineer</title>
-    
-    <!-- Stylesheets -->
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Scroll Progress Indicator -->
     <div id="scroll-progress"></div>
 
     <!-- ==========================================
        NAVIGATION HEADER
        ========================================== -->
     <header class="header" id="header">
-        <div class="container">
-            <a href="#home" class="logo" id="logo-anchor">
-                <span>Tanim</span>.QA
+        <div class="container header-inner">
+            <a href="#home" class="logo">
+                <span class="logo-mark">✓</span>
+                <span class="logo-text">Tanim<span class="logo-accent">QA</span></span>
             </a>
-            
+
             <nav>
                 <ul class="nav-menu" id="nav-menu">
-                    <li><a href="#home" class="nav-link active" id="nav-link-home">Home</a></li>
-                    <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
-                    <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
-                    <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
-                    <li><a href="#experience" class="nav-link" id="nav-link-experience">Experience</a></li>
-                    <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link active">Overview</a></li>
+                    <li><a href="#experience" class="nav-link">Run History</a></li>
+                    <li><a href="#projects" class="nav-link">Test Suites</a></li>
+                    <li><a href="#skills" class="nav-link">Coverage</a></li>
+                    <li><a href="#achievements" class="nav-link">Certified</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            
+
             <div class="nav-actions">
-                <!-- Theme Toggle Button -->
                 <button class="theme-toggle-btn" id="theme-toggle-btn" aria-label="Toggle visual theme">
-                    <!-- Sun Icon (Visible in Dark Mode) -->
-                    <svg class="sun-icon" id="icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zM7.05 18.01l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.02-.39-1.41 0z"/>
-                    </svg>
-                    <!-- Moon Icon (Visible in Light Mode) -->
-                    <svg class="moon-icon" id="icon-moon" style="display:none;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"/>
-                    </svg>
+                    <svg class="sun-icon" id="icon-sun" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm1.06-10.96c-.39-.39-1.03-.39-1.41 0l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.38.39-1.02 0-1.41zM7.05 18.01l-1.06 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.02-.39-1.41 0z"/></svg>
+                    <svg class="moon-icon" id="icon-moon" style="display:none;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 12.79A9 9 0 1 1 11.21 3c0 0 0 0 0 0A7 7 0 0 0 21 12.79z"/></svg>
                 </button>
-                
-                <!-- Mobile Navigation Button -->
                 <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <span></span><span></span><span></span>
                 </button>
             </div>
         </div>
     </header>
 
-    <!-- ==========================================
-       HERO SECTION
-       ========================================== -->
-    <section class="hero" id="home">
-        <!-- Floating Ambient Background Orbs -->
-        <div class="hero-float-orb orb-1"></div>
-        <div class="hero-float-orb orb-2"></div>
-        
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content reveal">
-                    <div class="hero-badge">
-                        <span class="pulse-dot"></span>
-                        Jr. SQA Engineer @ AKIJ iBOS
-                    </div>
-                    <h1 class="hero-title">
-                        Securing the <br><span class="highlight-text">Digital Quality</span>
-                    </h1>
-                    <div class="hero-subtitle" id="typed-output-container">
-                        I am a <span class="highlight-text" id="typed-text"></span><span class="typed-cursor">|</span>
-                    </div>
-                    <p class="hero-description">
-                        Hi, I'm Ishtiaque Ahmed Tanim. A Software Quality Assurance (SQA) Engineer specializing in automating critical workflows, validating multi-tenant cloud-based SaaS products, and building high-performance E2E testing systems.
-                    </p>
-                    <div class="hero-btns">
-                        <a href="#contact" class="btn btn-primary" id="hero-btn-contact">
-                            <span>Get In Touch</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
-                        <!-- Linked directly to your CV file -->
-                        <a href="Ishtiaque Ahmed Tanim_Jr. SQA.pdf" download class="btn btn-secondary" id="hero-btn-cv">
-                            <span>Download CV</span>
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="hero-visual reveal delay-1">
-                    <div class="hero-card glass-panel">
-                        <div class="hero-card-glow"></div>
-                        <div class="hero-card-code">
-                            <div><span class="comment">// E2E Test Suite Configurations</span></div>
-                            <div><span class="keyword">const</span> testConfig = {</div>
-                            <div style="padding-left: 20px;"><span class="class">framework</span>: <span class="string">"Playwright POM"</span>,</div>
-                            <div style="padding-left: 20px;"><span class="class">runner</span>: <span class="string">"GitHub Actions CI/CD"</span>,</div>
-                            <div style="padding-left: 20px;"><span class="class">saasHRMS</span>: <span class="string">"PeopleDesk Tested"</span>,</div>
-                            <div style="padding-left: 20px;"><span class="class">saasERP</span>: <span class="string">"Managerium Tested"</span>,</div>
-                            <div style="padding-left: 20px;"><span class="class">bugsCaught</span>: <span class="string">"100+ Documented"</span>,</div>
-                            <div style="padding-left: 20px;"><span class="class">apiVerified</span>: <span class="keyword">true</span></div>
-                            <div>};</div>
-                            <div style="margin-top: 10px;"><span class="keyword">function</span> <span class="class">assertStability</span>(app) {</div>
-                            <div style="padding-left: 20px;"><span class="keyword">return</span> <span class="string">"🛡️ Scalable & Flawless User Flows"</span>;</div>
-                            <div>}</div>
+    <main>
+
+        <!-- ==========================================
+           HERO — TEST RUN SUMMARY HEADER
+           ========================================== -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-top">
+                    <div class="hero-text">
+                        <div class="run-status-chip reveal">
+                            <span class="status-dot"></span>
+                            Suite Status: <strong>All Systems Verified</strong>
                         </div>
 
-                        <div class="hero-photo-frame">
-                            <img src="Tanim.png" alt="Portrait of Ishtiaque Ahmed Tanim" class="hero-photo">
-                        </div>
+                        <h1 class="hero-name reveal delay-1">Ishtiaque Ahmed Tanim</h1>
+                        <p class="hero-role reveal delay-1">Junior SQA &amp; Test Automation Engineer <span class="hero-role-sep">·</span> AKIJ iBOS Limited</p>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ==========================================
-       ABOUT ME SECTION
-       ========================================== -->
-    <section class="section" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-graphics reveal">
-                    <div class="about-card glass-panel">
-                        <div class="about-card-glow"></div>
-                        <h3 class="highlight-text">Test Automation Specialist</h3>
-                        <p style="margin: 1.5rem 0; color: var(--text-secondary);">
-                            Dedicated to designing robust testing frameworks, executing comprehensive test strategies across web/mobile apps, and optimizing continuous integration pipelines to eliminate defects before production release.
+                        <p class="hero-desc reveal delay-2">
+                            I validate multi-tenant cloud SaaS products end-to-end — designing test strategy, automating regression suites with Playwright, verifying APIs, and load-testing for scale before anything reaches production.
                         </p>
-                        
-                        <div class="about-stat-grid">
-                            <div class="stat-item">
-                                <h3 id="stat-projects">100+</h3>
-                                <p>Bugs Caught & Documented</p>
-                            </div>
-                            <div class="stat-item">
-                                <h3 id="stat-hours">3+</h3>
-                                <p>SaaS Platforms Tested</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="about-info reveal delay-1">
-                    <div class="section-title-wrapper" style="text-align: left; margin-bottom: 2rem;">
-                        <span class="section-tag">About Me</span>
-                        <h2 class="section-title">Safeguarding Cloud SaaS <br>& <span class="highlight-text">Product Scalability</span></h2>
-                    </div>
-                    
-                    <p class="about-text">
-                        I am an active Junior SQA Engineer at **AKIJ iBOS Limited**, with extensive experience validating multi-tenant architectures (HRMS, POS, and AI portals). I excel at designing test coverage documentation, executing Postman API integrations, and scaling JMeter performance benchmarks.
-                    </p>
-                    
-                    <!-- Interactive Tabs -->
-                    <div class="about-tabs">
-                        <button class="tab-btn active" id="tab-btn-bio" data-tab="tab-bio">Expertise</button>
-                        <button class="tab-btn" id="tab-btn-edu" data-tab="tab-edu">Education</button>
-                        <button class="tab-btn" id="tab-btn-vision" data-tab="tab-vision">Philosophies</button>
-                    </div>
-                    
-                    <!-- Expertise Tab Content -->
-                    <div class="tab-content active" id="tab-bio">
-                        <ul class="tab-info-list">
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                                <div>
-                                    <h4>Automation & Performance Engineering</h4>
-                                    <p>Proficient in building Page Object Model (POM) frameworks using Playwright & Selenium. Experienced in performance load scripting via JMeter and Locust.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                <div>
-                                    <h4>Comprehensive Manual & API Testing</h4>
-                                    <p>Skilled in manual web and mobile (iOS/Android) tests, endpoint assertions using Postman & Newman, and tracking defects in Jira & ClickUp.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Education Tab Content -->
-                    <div class="tab-content" id="tab-edu">
-                        <ul class="tab-info-list">
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
-                                <div>
-                                    <h4>B.Sc. in Computer Science and Engineering</h4>
-                                    <p>State University of Bangladesh (SUB) — Graduated 2024. Maintained strong focus on SDLC/STLC, object-oriented concepts, and web technology.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                                <div>
-                                    <h4>HSC (Science)</h4>
-                                    <p>Khagrachhari Government College — Graduated 2019. Provided strong foundational science and logical skills.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Vision Tab Content -->
-                    <div class="tab-content" id="tab-vision">
-                        <ul class="tab-info-list">
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-                                <div>
-                                    <h4>Shift-Left Quality Focus</h4>
-                                    <p>Advocate for executing tests early in the SDLC/STLC, organizing reusable test plans, and automating repetitive regression workflows.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <svg class="list-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                                <div>
-                                    <h4>Agile Team Synergy</h4>
-                                    <p>Active contributor in daily Scrum standups, bridging communication between developers and product managers to speed up sprint releases.</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- ==========================================
-       TECHNICAL SKILLS SECTION
-       ========================================== -->
-    <section class="section" id="skills" style="background-color: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-title-wrapper reveal">
-                <span class="section-tag">Capabilities</span>
-                <h2 class="section-title">My Technical <span class="highlight-text">Skill Matrix</span></h2>
-            </div>
-            
-            <!-- Filters to categorize skills interactively -->
-            <div class="skills-filter reveal delay-1">
-                <button class="filter-btn active" id="skill-filter-all" data-filter="all">Show All</button>
-                <button class="filter-btn" id="skill-filter-testing" data-filter="testing">Testing & Automation</button>
-                <button class="filter-btn" id="skill-filter-languages" data-filter="languages">Programming</button>
-                <button class="filter-btn" id="skill-filter-tools" data-filter="tools">Tools & Frameworks</button>
-                <button class="filter-btn" id="skill-filter-concepts" data-filter="concepts">Concepts</button>
-            </div>
-            
-            <div class="skills-grid reveal delay-2">
-                <!-- Skill Card: Manual Testing -->
-                <div class="skill-card glass-panel" data-category="testing">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Manual Web & Mobile Testing</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="95%"></div>
+                        <div class="hero-actions reveal delay-2">
+                            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                            <a href="Ishtiaque Ahmed Tanim_Jr. SQA.pdf" download class="btn btn-ghost">Download Résumé</a>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Skill Card: Playwright -->
-                <div class="skill-card glass-panel" data-category="testing tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12s4.48 10 10 10 10-4.48 10-10zm-10 8c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Playwright (POM Pattern)</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="90%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card: Selenium -->
-                <div class="skill-card glass-panel" data-category="testing tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Selenium Automation</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="88%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card: API Testing -->
-                <div class="skill-card glass-panel" data-category="testing tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-8 5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm8-15H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-8 5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>API Testing (Postman/Newman)</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="92%"></div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Skill Card: Performance Testing (JMeter) -->
-                <div class="skill-card glass-panel" data-category="testing tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14H11V8h2v8z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Performance Testing (JMeter)</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="85%"></div>
-                        </div>
+
+                    <div class="hero-photo-wrap reveal delay-2">
+                        <img src="Tanim.png" alt="Portrait of Ishtiaque Ahmed Tanim" class="hero-photo">
                     </div>
                 </div>
 
-                <!-- Skill Card: k6 Load Testing -->
-                <div class="skill-card glass-panel" data-category="testing tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13.49 5.48c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm-3.6 13.9l1-4.4 2.1 2v6h2v-7.5l-2.1-2 .6-3c1.3 1.5 3.3 2.5 5.5 2.5v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1l-5.2 2.2v4.7h2v-3.4l1.8-.7-1.6 8.1-4.9-1-.4 2 7 1.4z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Load Testing (k6 by Grafana)</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="82%"></div>
+                <!-- Summary metrics row, styled like a CI run summary -->
+                <div class="run-summary reveal delay-3">
+                    <div class="run-metric">
+                        <span class="metric-icon pass">✓</span>
+                        <div>
+                            <span class="metric-value">100+</span>
+                            <span class="metric-label">Bugs Caught &amp; Documented</span>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Skill Card: JavaScript & Python -->
-                <div class="skill-card glass-panel" data-category="languages">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>JS & Python Programming</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="80%"></div>
+                    <div class="run-metric">
+                        <span class="metric-icon pass">✓</span>
+                        <div>
+                            <span class="metric-value">31</span>
+                            <span class="metric-label">Automated Tests Built</span>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Skill Card: STLC & Agile -->
-                <div class="skill-card glass-panel" data-category="concepts">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0-2-.9-2-2V4c0-1.1-.9-2-2-2zm0 14H8V4h12v12z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>STLC / SDLC & Agile Scrum</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="95%"></div>
+                    <div class="run-metric">
+                        <span class="metric-icon pass">✓</span>
+                        <div>
+                            <span class="metric-value">3</span>
+                            <span class="metric-label">SaaS Platforms Tested</span>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Skill Card: Jira & Defect Triage -->
-                <div class="skill-card glass-panel" data-category="tools">
-                    <div class="skill-icon-wrapper">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.1z"/></svg>
-                    </div>
-                    <div class="skill-info">
-                        <h3>Jira, ClickUp & Git</h3>
-                        <div class="skill-level-bar">
-                            <div class="skill-level-progress" data-level="90%"></div>
+                    <div class="run-metric">
+                        <span class="metric-icon pass">✓</span>
+                        <div>
+                            <span class="metric-value">1+</span>
+                            <span class="metric-label">Years in QA</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==========================================
-       FEATURED PROJECTS SECTION
-       ========================================== -->
-    <section class="section" id="projects">
-        <div class="container">
-            <div class="section-title-wrapper reveal">
-                <span class="section-tag">Projects</span>
-                <h2 class="section-title">Tested SaaS & <span class="highlight-text">Automation Frameworks</span></h2>
-            </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1: Playwright SauceDemo POM -->
-                <div class="project-card glass-panel reveal" id="project-card-playwright">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <!-- Code Icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/tester-tanim/saucedemo-playwright-pom" target="_blank" class="project-link" aria-label="View source code on Github" id="proj-link-playwright-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Playwright SauceDemo — POM Framework</h3>
-                        <p>End-to-end test suite for SauceDemo with 31 tests across login, inventory, cart, and checkout flows. Built with the Page Object Model pattern, custom fixtures for authenticated contexts, separated test data, and GitHub Actions CI/CD integration.</p>
-                    </div>
-                    <div class="project-tags">
-                        <span>Playwright</span>
-                        <span>Page Object Model</span>
-                        <span>CI/CD</span>
-                        <span>JavaScript</span>
-                        <span>31 Tests</span>
-                    </div>
-                </div>
-                
-                <!-- Project 2: API Testing Suite -->
-                <div class="project-card glass-panel reveal delay-1" id="project-card-api">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <!-- Server/API Icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 13H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-6c0-.55-.45-1-1-1zm-8 5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm8-15H4c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h16c.55 0 1-.45 1-1V4c0-.55-.45-1-1-1zm-8 5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/tester-tanim/API-Testing" target="_blank" class="project-link" aria-label="View source code on Github" id="proj-link-api-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>REST API Testing Suite</h3>
-                        <p>Comprehensive API testing framework for thetestingworldapi.com with 6 test scripts and 22 assertions. Covers student CRUD operations, technical skills, and address management using dynamic pre-request scripts, environment variables, and Newman HTML reporting.</p>
-                    </div>
-                    <div class="project-tags">
-                        <span>Postman</span>
-                        <span>Newman CLI</span>
-                        <span>REST API</span>
-                        <span>22 Assertions</span>
-                    </div>
-                </div>
-                
-                <!-- Project 3: Performance Testing (JMeter) -->
-                <div class="project-card glass-panel reveal" id="project-card-performance">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <!-- Speed/Performance Icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44z"/><path d="M10.59 15.41a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/tester-tanim/Performance_Testing" target="_blank" class="project-link" aria-label="View source code on Github" id="proj-link-performance-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>JMeter Performance Testing</h3>
-                        <p>Performance and load testing suite using Apache JMeter against thetestingworldapi.com. Configured Thread Groups with 1–6 concurrent users, generated JTL reports via CLI non-GUI mode, and produced detailed HTML performance reports using BlazeMeter JMX recordings.</p>
-                    </div>
-                    <div class="project-tags">
-                        <span>JMeter</span>
-                        <span>Load Testing</span>
-                        <span>BlazeMeter</span>
-                        <span>HTML Reports</span>
-                    </div>
-                </div>
-                
-                <!-- Project 4: Mahfil App Test Case & Bug Report -->
-                <div class="project-card glass-panel reveal delay-1" id="project-card-mahfil">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <!-- Bug/Testing Icon -->
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h-2.81c-.45-.78-1.07-1.45-1.82-1.96L17 4.41 15.59 3l-2.17 2.17C12.96 5.06 12.49 5 12 5c-.49 0-.96.06-1.41.17L8.41 3 7 4.41l1.62 1.63C7.88 6.55 7.26 7.22 6.81 8H4v2h2.09c-.05.33-.09.66-.09 1v1H4v2h2v1c0 .34.04.67.09 1H4v2h2.81c1.04 1.79 2.97 3 5.19 3s4.15-1.21 5.19-3H20v-2h-2.09c.05-.33.09-.66.09-1v-1h2v-2h-2v-1c0-.34-.04-.67-.09-1H20V8zm-6 8h-4v-2h4v2zm0-4h-4v-2h4v2z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/tester-tanim/Mahfil-App-Test-Case-and-Bug-Report" target="_blank" class="project-link" aria-label="View source code on Github" id="proj-link-mahfil-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Mahfil App — Test Cases & Bug Report</h3>
-                        <p>Manual testing documentation for the Mahfil mobile application covering Sign In, Sign Up, and search functionality. Created structured test case documents, executed exploratory testing scenarios, and produced detailed bug reports with severity classifications.</p>
-                    </div>
-                    <div class="project-tags">
-                        <span>Manual Testing</span>
-                        <span>Test Cases</span>
-                        <span>Bug Reports</span>
-                        <span>Mobile App</span>
-                    </div>
-                </div>
+        <!-- ==========================================
+           ABOUT — assertion style statements
+           ========================================== -->
+        <section class="section" id="about">
+            <div class="container">
+                <p class="eyebrow reveal">assert_quality()</p>
+                <h2 class="section-title reveal">What I bring to a release</h2>
 
-                <!-- Project 5: JSON Formatter Chrome Extension -->
-                <div class="project-card glass-panel reveal" id="project-card-json-formatter">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5 3h10l4 4v14H5V3zm9 1.5V8h3.5L14 4.5zM8 11h8v1.5H8V11zm0 3h8v1.5H8V14zm0 3h6v1.5H8V17z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Coder-Tanim/Json_Formattor" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View JSON Formatter source code on Github" id="proj-link-json-formatter-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
+                <div class="assertions-grid">
+                    <div class="assertion-card reveal">
+                        <span class="assertion-tick">✓</span>
+                        <h3>Shift-left by default</h3>
+                        <p>I write test cases while requirements are still being discussed, not after a build lands — catching gaps before they become defects.</p>
                     </div>
-                    <div class="project-info">
-                        <h3>Simple JSON Formatter - Chrome Extension</h3>
-                        <p>A lightweight Chrome extension I built to speed up day-to-day debugging and data inspection. It formats and validates JSON, highlights syntax, loads JSON from URLs, supports search, and preserves inputs with persistent storage directly inside the browser popup.</p>
+                    <div class="assertion-card reveal delay-1">
+                        <span class="assertion-tick">✓</span>
+                        <h3>Automation that scales</h3>
+                        <p>Page Object Model suites in Playwright and Selenium, wired into CI/CD, so regression coverage grows without slowing the team down.</p>
                     </div>
-                    <div class="project-tags">
-                        <span>Chrome Extension</span>
-                        <span>JSON Validation</span>
-                        <span>Syntax Highlighting</span>
-                        <span>Productivity Tool</span>
+                    <div class="assertion-card reveal delay-2">
+                        <span class="assertion-tick">✓</span>
+                        <h3>Beyond the UI</h3>
+                        <p>API contract testing with Postman/Newman and load testing with JMeter &amp; k6 — verifying the product holds up under real traffic, not just clicks.</p>
                     </div>
-                </div>
-
-                <!-- Project 6: Code Diff Highlighter Chrome Extension -->
-                <div class="project-card glass-panel reveal delay-1" id="project-card-code-differ">
-                    <div class="project-header">
-                        <div class="project-type-icon">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 7h10v2H7V7zm0 4h6v2H7v-2zm0 4h10v2H7v-2zM3 5h2v14H3V5zm16 0h2v14h-2V5z"/></svg>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Coder-Tanim/Code_Differ" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Code Differ source code on Github" id="proj-link-code-differ-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Code Diff Highlighter - Chrome Extension</h3>
-                        <p>A browser-based helper I created to make code review and bug-fix comparison faster. It compares old and new snippets, highlights only added or changed lines, shows quick diff stats, and saves sessions locally so I can switch context without losing work.</p>
-                    </div>
-                    <div class="project-tags">
-                        <span>Chrome Extension</span>
-                        <span>Diff Viewer</span>
-                        <span>JavaScript</span>
-                        <span>Workflow Tool</span>
+                    <div class="assertion-card reveal delay-3">
+                        <span class="assertion-tick">✓</span>
+                        <h3>Clear defect reporting</h3>
+                        <p>Severity-classified, reproducible bug reports in Jira and ClickUp that developers can act on immediately, no back-and-forth needed.</p>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="projects-more reveal">
-                <a href="https://github.com/tester-tanim?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="projects-more-btn">
-                    <span>More Project</span>
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </a>
-            </div>
-        </div>
-    </section>
+        <!-- ==========================================
+           RUN HISTORY — experience timeline
+           ========================================== -->
+        <section class="section section-alt" id="experience">
+            <div class="container">
+                <p class="eyebrow reveal">run_history.log</p>
+                <h2 class="section-title reveal">Where I've shipped quality</h2>
 
-    <!-- ==========================================
-       EXPERIENCE & MILESTONES SECTION
-       ========================================== -->
-    <section class="section" id="experience" style="background-color: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-title-wrapper reveal">
-                <span class="section-tag">Career</span>
-                <h2 class="section-title">Work Experience & <span class="highlight-text">Education</span></h2>
-            </div>
-            
-            <div class="timeline">
-                <!-- Timeline Item: Junior SQA Engineer at AKIJ iBOS -->
-                <div class="timeline-item reveal">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-panel">
-                        <div class="timeline-header">
-                            <div class="timeline-title">
+                <div class="run-history">
+                    <div class="run-entry reveal">
+                        <div class="run-entry-status pass">PASS</div>
+                        <div class="run-entry-body">
+                            <div class="run-entry-top">
                                 <h3>Junior SQA Engineer</h3>
-                                <p>AKIJ iBOS Limited, Dhaka</p>
+                                <span class="run-entry-date">Jan 2025 — Present</span>
                             </div>
-                            <span class="timeline-date">Jan 2025 - Present</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Promoted to Junior SQA Engineer after a successful internship. Leading QA efforts across multi-tenant cloud-based SaaS products with expanded ownership and responsibilities.</p>
-                            <ul class="timeline-bullets">
-                                <li>Owning end-to-end test coverage for PeopleDesk HRMS, POS Managerium, and NextJobz AI portal.</li>
-                                <li>Building and maintaining Page Object Model (POM) E2E test suites with Playwright, automating regression runs.</li>
-                                <li>Conducting API endpoint regressions utilizing Postman and Newman runners.</li>
-                                <li>Performing performance and load testing with JMeter and k6 to ensure scalability under production traffic.</li>
-                            </ul>
+                            <p class="run-entry-org">AKIJ iBOS Limited, Dhaka</p>
+                            <p class="run-entry-desc">Promoted after a successful internship. Own end-to-end test coverage for PeopleDesk HRMS, POS Managerium, and the NextJobz AI portal — building Playwright POM suites, running Postman/Newman API regressions, and load-testing with JMeter &amp; k6.</p>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Timeline Item: SQA Intern at AKIJ iBOS -->
-                <div class="timeline-item reveal delay-1">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-panel">
-                        <div class="timeline-header">
-                            <div class="timeline-title">
+
+                    <div class="run-entry reveal delay-1">
+                        <div class="run-entry-status pass">PASS</div>
+                        <div class="run-entry-body">
+                            <div class="run-entry-top">
                                 <h3>SQA Intern</h3>
-                                <p>AKIJ iBOS Limited, Dhaka</p>
+                                <span class="run-entry-date">Oct 2024 — Dec 2024</span>
                             </div>
-                            <span class="timeline-date">Oct 2024 - Dec 2024</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Completed a hands-on internship in Software Quality Assurance, gaining practical experience across the full testing lifecycle in an enterprise SaaS environment.</p>
-                            <ul class="timeline-bullets">
-                                <li>Designed, documented, and executed manual test cases across web and mobile (iOS/Android) platforms.</li>
-                                <li>Identified and tracked 100+ bugs in Jira with detailed root cause analysis and severity classifications.</li>
-                                <li>Supported senior QA engineers with API testing using Postman and mobile testing via Maestro Studio.</li>
-                                <li>Learned and applied STLC, Agile Scrum processes, and defect triage workflows in daily standups.</li>
-                            </ul>
+                            <p class="run-entry-org">AKIJ iBOS Limited, Dhaka</p>
+                            <p class="run-entry-desc">Hands-on internship across the full STLC. Designed and executed manual test cases on web and mobile, tracked 100+ bugs in Jira with severity classification, and supported API testing with Postman.</p>
                         </div>
                     </div>
-                </div>
-                
-                <!-- Timeline Item: CSE at State University of Bangladesh -->
-                <div class="timeline-item reveal delay-2">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-panel">
-                        <div class="timeline-header">
-                            <div class="timeline-title">
-                                <h3>B.Sc. in Computer Science and Engineering</h3>
-                                <p>State University of Bangladesh (SUB)</p>
-                            </div>
-                            <span class="timeline-date">Graduated 2024</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Completed academic modules with hands-on coursework in Software Engineering, STLC documentation, Database administration, and Digital electronics.</p>
-                            <ul class="timeline-bullets">
-                                <li>Developed a clean understanding of OOP principles, SDLC/STLC phases, and Agile workflows.</li>
-                                <li>Coded interactive graphical layouts in Java Swing (NetBeans) for retro gaming modules.</li>
-                                <li>Emulated sequential logic circuits (3-bit asynchronous counters) as part of hardware lab projects.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Timeline Item: HSC Khagrachhari Govt College -->
-                <div class="timeline-item reveal delay-3">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-card glass-panel">
-                        <div class="timeline-header">
-                            <div class="timeline-title">
-                                <h3>HSC (Science)</h3>
-                                <p>Khagrachhari Government College</p>
+                    <div class="run-entry reveal delay-2">
+                        <div class="run-entry-status build">EDU</div>
+                        <div class="run-entry-body">
+                            <div class="run-entry-top">
+                                <h3>B.Sc. in Computer Science &amp; Engineering</h3>
+                                <span class="run-entry-date">Graduated 2024</span>
                             </div>
-                            <span class="timeline-date">Graduated 2019</span>
-                        </div>
-                        <div class="timeline-body">
-                            <p>Acquired strong analytical, math, and physics foundations, paving the path towards an engineering degree.</p>
+                            <p class="run-entry-org">State University of Bangladesh (SUB)</p>
+                            <p class="run-entry-desc">Built a strong foundation in SDLC/STLC, OOP principles, and Agile workflows. Developed graphical Java Swing applications and studied digital electronics fundamentals.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==========================================
-       CERTIFICATIONS & TRAINING SECTION
-       ========================================== -->
-    <section class="section" id="certifications">
-        <div class="container">
-            <div class="section-title-wrapper reveal">
-                <span class="section-tag">Validations</span>
-                <h2 class="section-title">Certifications & <span class="highlight-text">Training</span></h2>
-            </div>
+        <!-- ==========================================
+           TEST SUITES — projects
+           ========================================== -->
+        <section class="section" id="projects">
+            <div class="container">
+                <p class="eyebrow reveal">test_suites/</p>
+                <h2 class="section-title reveal">Suites I've built &amp; run</h2>
 
-            <div class="certifications-wrap reveal">
-                <div class="glass-panel" style="padding: 2.5rem; display: flex; align-items: center; gap: 2rem; flex-wrap: wrap;">
-                    <div class="skill-icon-wrapper" style="width: 64px; height: 64px; background: rgba(99, 102, 241, 0.08); border-radius: var(--radius-md); color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                        <!-- Certificate Icon -->
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width: 32px; height: 32px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <div class="suite-grid">
+                    <div class="suite-card reveal" id="project-card-playwright">
+                        <div class="suite-card-top">
+                            <h3>SauceDemo — Playwright POM Suite</h3>
+                            <span class="suite-result">31 / 31 passed</span>
+                        </div>
+                        <p>End-to-end suite covering login, inventory, cart, and checkout. Page Object Model pattern, custom fixtures for authenticated contexts, and GitHub Actions CI/CD.</p>
+                        <div class="tag-row">
+                            <span class="tag">Playwright</span><span class="tag">POM</span><span class="tag">CI/CD</span>
+                        </div>
+                        <a href="https://github.com/tester-tanim/saucedemo-playwright-pom" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
                     </div>
-                    <div style="flex-grow: 1;">
-                        <h3 style="font-size: 1.35rem; font-weight: 700; margin-bottom: 0.25rem;">Advanced SQA & Cybersecurity</h3>
-                        <p style="color: var(--color-secondary); font-weight: 600; font-size: 0.95rem; margin-bottom: 0.5rem;">IT Training BD | Feb 2024 – Jul 2024</p>
-                        <p style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 0.75rem;">Specialized training in E2E automation structures, multi-tenant SaaS testing logic, performance loading setups, and penetration security protocols.</p>
-                        <a href="https://drive.google.com/file/d/1Y_ScaP5ynzK0UW0WRbpMI2iYSXxsAcwE/view" target="_blank" rel="noopener noreferrer" id="cert-link-it-training-bd" style="display: inline-flex; align-items: center; font-family: monospace; font-size: 0.85rem; padding: 0.35rem 0.85rem; border-radius: var(--radius-full); background: rgba(255,255,255,0.05); border: 1px solid var(--card-border); color: var(--text-secondary); text-decoration: none;">View Certificate: ITB-B23-4314</a>
+
+                    <div class="suite-card reveal delay-1" id="project-card-api">
+                        <div class="suite-card-top">
+                            <h3>REST API Testing Suite</h3>
+                            <span class="suite-result">22 / 22 assertions</span>
+                        </div>
+                        <p>API framework for thetestingworldapi.com covering student CRUD, skills, and address management. Dynamic pre-request scripts and Newman HTML reporting.</p>
+                        <div class="tag-row">
+                            <span class="tag">Postman</span><span class="tag">Newman</span><span class="tag">REST API</span>
+                        </div>
+                        <a href="https://github.com/tester-tanim/API-Testing" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
+                    </div>
+
+                    <div class="suite-card reveal" id="project-card-performance">
+                        <div class="suite-card-top">
+                            <h3>JMeter Performance Testing</h3>
+                            <span class="suite-result">1–6 concurrent users</span>
+                        </div>
+                        <p>Load testing suite against thetestingworldapi.com. Thread groups run via CLI non-GUI mode, with BlazeMeter JMX recordings producing detailed HTML performance reports.</p>
+                        <div class="tag-row">
+                            <span class="tag">JMeter</span><span class="tag">Load Testing</span><span class="tag">BlazeMeter</span>
+                        </div>
+                        <a href="https://github.com/tester-tanim/Performance_Testing" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
+                    </div>
+
+                    <div class="suite-card reveal delay-1" id="project-card-mahfil">
+                        <div class="suite-card-top">
+                            <h3>Mahfil App — Test Cases &amp; Bug Report</h3>
+                            <span class="suite-result">Manual · Exploratory</span>
+                        </div>
+                        <p>Manual test documentation for the Mahfil mobile app covering Sign In, Sign Up, and search. Structured test cases plus severity-classified bug reports.</p>
+                        <div class="tag-row">
+                            <span class="tag">Manual Testing</span><span class="tag">Bug Reports</span><span class="tag">Mobile</span>
+                        </div>
+                        <a href="https://github.com/tester-tanim/Mahfil-App-Test-Case-and-Bug-Report" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
+                    </div>
+
+                    <div class="suite-card reveal" id="project-card-json-formatter">
+                        <div class="suite-card-top">
+                            <h3>JSON Formatter — Chrome Extension</h3>
+                            <span class="suite-result">Utility</span>
+                        </div>
+                        <p>Lightweight extension that formats and validates JSON, highlights syntax, loads JSON from URLs, and persists inputs directly in the browser popup.</p>
+                        <div class="tag-row">
+                            <span class="tag">Chrome Extension</span><span class="tag">JSON</span>
+                        </div>
+                        <a href="https://github.com/Coder-Tanim/Json_Formattor" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
+                    </div>
+
+                    <div class="suite-card reveal delay-1" id="project-card-code-differ">
+                        <div class="suite-card-top">
+                            <h3>Code Diff Highlighter — Chrome Extension</h3>
+                            <span class="suite-result">Utility</span>
+                        </div>
+                        <p>Browser helper comparing old and new code snippets, highlighting changed lines with quick diff stats, and saving sessions locally.</p>
+                        <div class="tag-row">
+                            <span class="tag">Chrome Extension</span><span class="tag">Diff Viewer</span>
+                        </div>
+                        <a href="https://github.com/Coder-Tanim/Code_Differ" target="_blank" rel="noopener noreferrer" class="suite-link">View source →</a>
+                    </div>
+                </div>
+
+                <div class="suite-more">
+                    <a href="https://github.com/tester-tanim?tab=repositories" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">View all repositories →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+           SKILLS — grouped pill cloud
+           ========================================== -->
+        <section class="section section-alt" id="skills">
+            <div class="container">
+                <p class="eyebrow reveal">tech_stack/</p>
+                <h2 class="section-title reveal">Tools &amp; skill set</h2>
+
+                <div class="skillset">
+                    <div class="skillset-group reveal">
+                        <h3>Automation</h3>
+                        <div class="pill-cloud">
+                            <span class="pill pill-lg">Playwright</span>
+                            <span class="pill pill-lg">Selenium</span>
+                            <span class="pill">Page Object Model</span>
+                            <span class="pill">GitHub Actions CI/CD</span>
+                        </div>
+                    </div>
+                    <div class="skillset-group reveal delay-1">
+                        <h3>API &amp; Performance</h3>
+                        <div class="pill-cloud">
+                            <span class="pill pill-lg">Postman</span>
+                            <span class="pill">Newman</span>
+                            <span class="pill pill-lg">JMeter</span>
+                            <span class="pill">k6</span>
+                            <span class="pill">BlazeMeter</span>
+                        </div>
+                    </div>
+                    <div class="skillset-group reveal delay-2">
+                        <h3>Manual &amp; Process</h3>
+                        <div class="pill-cloud">
+                            <span class="pill pill-lg">Manual Web &amp; Mobile Testing</span>
+                            <span class="pill pill-lg">STLC / SDLC</span>
+                            <span class="pill">Agile Scrum</span>
+                            <span class="pill">Exploratory Testing</span>
+                        </div>
+                    </div>
+                    <div class="skillset-group reveal delay-3">
+                        <h3>Code &amp; Tracking</h3>
+                        <div class="pill-cloud">
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">Python</span>
+                            <span class="pill">Git</span>
+                            <span class="pill">Jira</span>
+                            <span class="pill">ClickUp</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==========================================
-       CONTACT & REFERENCES SECTION
-       ========================================== -->
-    <section class="section" id="contact" style="background-color: var(--bg-secondary);">
-        <div class="container">
-            <div class="section-title-wrapper reveal">
-                <span class="section-tag">Collab</span>
-                <h2 class="section-title">Get In Touch <span class="highlight-text">& References</span></h2>
-            </div>
-            
-            <div class="contact-grid">
-                <!-- Left panel: Contact Details & References -->
-                <div class="contact-info-panel glass-panel reveal">
-                    <div class="contact-info-glow"></div>
-                    <div class="contact-info-header">
-                        <h3>Connect with me!</h3>
-                        <p>Ready to deploy high-fidelity automated test coverage, write robust scripts, or add an agile QA specialist to your sprint releases?</p>
+        <!-- ==========================================
+           CERTIFIED — achievements + certifications
+           ========================================== -->
+        <section class="section" id="achievements">
+            <div class="container">
+                <p class="eyebrow reveal">certified_checks/</p>
+                <h2 class="section-title reveal">Verified &amp; recognized</h2>
+
+                <div class="cert-grid">
+                    <div class="cert-card reveal">
+                        <span class="cert-badge">VERIFIED</span>
+                        <h3>Advanced SQA &amp; Cybersecurity</h3>
+                        <p class="cert-org">IT Training BD — Feb 2024 – Jul 2024</p>
+                        <p>Specialized training in E2E automation structures, multi-tenant SaaS testing logic, performance loading setups, and penetration security protocols.</p>
+                        <a href="https://drive.google.com/file/d/1Y_ScaP5ynzK0UW0WRbpMI2iYSXxsAcwE/view" target="_blank" rel="noopener noreferrer" class="cert-link">Certificate ID: ITB-B23-4314 →</a>
                     </div>
-                    
-                    <ul class="contact-details" style="margin: 2rem 0 3rem 0;">
-                        <li class="contact-detail-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Email</h4>
-                                <p><a href="mailto:ishtiaqueahmed1998@gmail.com" id="contact-email-link">ishtiaqueahmed1998@gmail.com</a></p>
-                            </div>
-                        </li>
-                        <li class="contact-detail-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57-.35-.11-.74-.03-1.02.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.58l2.2-2.21c.28-.27.36-.66.25-1.01C8.7 6.45 8.5 5.25 8.5 4c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>WhatsApp</h4>
-                                <p>+8801557272482</p>
-                            </div>
-                        </li>
-                        <li class="contact-detail-item">
-                            <div class="contact-icon-wrapper">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-                            </div>
-                            <div class="contact-text">
-                                <h4>Location</h4>
-                                <p>Mohammadpur, Dhaka</p>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <!-- Professional References -->
-                    <div style="margin-bottom: 2.5rem;">
-                        <h4 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1rem;">References</h4>
-                        <div style="display: flex; flex-direction: column; gap: 1rem;">
-                            <div style="font-size: 0.85rem; border-left: 2px solid var(--color-primary); padding-left: 0.75rem;">
-                                <strong style="color: var(--text-primary);">Mohammad Ahshanul Haque</strong>
-                                <p style="color: var(--text-muted);">Head of SQA, AKIJ iBOS Limited</p>
-                                <p><a href="mailto:ahshanul@ibos.io" style="color: var(--color-secondary);">ahshanul@ibos.io</a></p>
-                            </div>
-                            <div style="font-size: 0.85rem; border-left: 2px solid var(--color-secondary); padding-left: 0.75rem;">
-                                <strong style="color: var(--text-primary);">Forhad Hossain</strong>
-                                <p style="color: var(--text-muted);">SQA Engineer, KAZ Software</p>
-                                <p><a href="mailto:forhad2097@gmail.com" style="color: var(--color-secondary);">forhad2097@gmail.com</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-socials-wrapper">
-                        <h4>My Platforms</h4>
-                        <div class="contact-socials">
-                            <a href="https://github.com" target="_blank" class="social-btn" aria-label="GitHub Profile Link" id="contact-social-github">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-                            </a>
-                            <a href="https://linkedin.com" target="_blank" class="social-btn" aria-label="LinkedIn Profile Link" id="contact-social-linkedin">
-                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
-                        </div>
+                    <div class="cert-card reveal delay-1">
+                        <span class="cert-badge">MILESTONE</span>
+                        <h3>Promoted to Junior SQA Engineer</h3>
+                        <p class="cert-org">AKIJ iBOS Limited — 2025</p>
+                        <p>Promoted from intern to full-time role after taking ownership of test coverage across multiple multi-tenant SaaS products during the internship period.</p>
                     </div>
                 </div>
-                
-                <!-- Right panel: Interactive Form -->
-                <div class="contact-form-panel glass-panel reveal delay-1">
-                    <h3 class="form-title">Send a Message</h3>
-                    
-                    <form id="contact-form" novalidate>
-                        <div class="form-grid">
+            </div>
+        </section>
+
+        <!-- ==========================================
+           CONTACT — submit a new test case
+           ========================================== -->
+        <section class="section section-alt" id="contact">
+            <div class="container">
+                <p class="eyebrow reveal">new_request.submit()</p>
+                <h2 class="section-title reveal">Let's work together</h2>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal">
+                        <p class="contact-lead">Looking for a QA engineer who automates critical workflows, validates SaaS products at scale, and communicates findings clearly? I'd love to hear about your project.</p>
+
+                        <ul class="contact-list">
+                            <li>
+                                <span class="contact-label">Email</span>
+                                <a href="mailto:ishtiaqueahmed1998@gmail.com">ishtiaqueahmed1998@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="contact-label">WhatsApp</span>
+                                <span>+8801557272482</span>
+                            </li>
+                            <li>
+                                <span class="contact-label">Location</span>
+                                <span>Mohammadpur, Dhaka</span>
+                            </li>
+                            <li>
+                                <span class="contact-label">GitHub</span>
+                                <a href="https://github.com/tester-tanim" target="_blank" rel="noopener noreferrer">github.com/tester-tanim</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form id="contact-form" novalidate class="contact-form">
+                        <div class="form-row">
                             <div class="form-group">
                                 <label class="form-label" for="form-name">Name</label>
-                                <input type="text" id="form-name" class="form-input" placeholder="Your Name" required>
+                                <input type="text" id="form-name" class="form-input" placeholder="Your name" required>
                             </div>
                             <div class="form-group">
                                 <label class="form-label" for="form-email">Email</label>
-                                <input type="email" id="form-email" class="form-input" placeholder="your.email@example.com" required>
-                            </div>
-                            <div class="form-group form-group-full">
-                                <label class="form-label" for="form-subject">Subject</label>
-                                <input type="text" id="form-subject" class="form-input" placeholder="QA Automation or Project Proposal?" required>
-                            </div>
-                            <div class="form-group form-group-full">
-                                <label class="form-label" for="form-message">Message</label>
-                                <textarea id="form-message" class="form-input" placeholder="Your message details..." required></textarea>
+                                <input type="email" id="form-email" class="form-input" placeholder="you@example.com" required>
                             </div>
                         </div>
-                        
-                        <div class="form-btn-wrapper">
-                            <button type="submit" class="btn btn-primary form-btn" id="form-submit-btn">
-                                <span>Send Message</span>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                            </button>
+                        <div class="form-group">
+                            <label class="form-label" for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" class="form-input" placeholder="QA role, project, or proposal" required>
                         </div>
+                        <div class="form-group">
+                            <label class="form-label" for="form-message">Message</label>
+                            <textarea id="form-message" class="form-input" placeholder="Tell me more..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn">
+                            <span>Send Message</span>
+                        </button>
                     </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ==========================================
-       FOOTER
-       ========================================== -->
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <h2><span>Tanim</span>.QA</h2>
-                </div>
-                
-                <div class="footer-copyright">
-                    <p>&copy; 2026 Ishtiaque Ahmed Tanim. All rights reserved.</p>
-                </div>
-            </div>
+        <div class="container footer-inner">
+            <span>© 2026 Ishtiaque Ahmed Tanim</span>
+            <span class="footer-tagline">Test. Trust. Deliver.</span>
         </div>
     </footer>
 
-    <!-- JavaScript Engine -->
     <script src="script.js"></script>
 </body>
 </html>
